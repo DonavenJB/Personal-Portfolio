@@ -11,7 +11,7 @@
   /* --color-primary: #191d2b; */
   --color-secondary: #FB6107;
   --color-white: #FFFFFF;
-  --color-black: #000;
+  --color-black: ;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
   --color-grey-2: #b2becd;
@@ -20,13 +20,13 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,.9);
   --rando-red: #DB0042;
 }
 
 .light-mode {
   --color-primary: #FFFFFF;
-  --color-secondary: #0693e3;
+  --color-secondary: #003459;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -265,19 +265,48 @@ section {
 
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
-  height: 90%;
+  height: 85%;
   width: 68%;
-  margin-left: 4rem;
-  background-color: var(--color-black);
+  margin-left: 3rem;
+  background-image: url("/img/bg.jpeg");
+  background-size: cover;
+  padding-right: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: var(--box-shadow-1);
+          box-shadow: var(--box-shadow-1);
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+}
+
+.header-content .left-header .image-2 {
+  border-radius: var(--br-sm-2);
+  height: 85%;
+  width: 68%;
+  margin-left: 3rem;
+  background-image: url("/img/bg2.jpeg");
+  background-size: cover;
+  padding-right: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: var(--box-shadow-1);
+          box-shadow: var(--box-shadow-1);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.header-content .left-header .image-2 img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  /* -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); */
 }
 
 .header-content .left-header .image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   /* -webkit-filter: grayscale(100%);
@@ -300,7 +329,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 18rem;
+  padding-right: 20rem;
 }
 
 .header-content .right-header .name {
@@ -1309,5 +1338,9 @@ section {
   .main-title h2 .bg-text {
     font-size: 4rem;
   }
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
